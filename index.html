@@ -23,9 +23,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Work</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -153,22 +153,22 @@
                     esse cumque molestiae in. Quisquam voluptates incidunt repellendus tenetur perferendis nostrum eum
                     repudiandae numquam ducimus provident.</p>
                 <div class="sosmed d-flex align-items-center">
-                    <div class="sosmed-item col">
+                    <div class="sosmed-item col d-flex align-items-center">
                         <a href=""><img src="img/Facebook.svg" alt="fb-icon"></a>
                         <p>Ocki Indra</p>
                     </div>
-                    <div class="sosmed-item col">
+                    <div class="sosmed-item col d-flex align-items-center">
                         <a href=""><img src="img/Instagram.svg" alt="ig-icon"></a>
                         <p>@OckiIndra</p>
                     </div>
-                    <div class="sosmed-item col">
+                    <div class="sosmed-item col d-flex align-items-center">
                         <a href=""><img src="img/Twitter.svg" alt="tw-icon"></a>
                         <p>@OckiIndra</p>
                     </div>
                 </div>
             </div>
             <div class="contact-box-kanan col">
-                <form>
+                <form onsubmit="onFromSubmited(event)">
                     <div class="mb-3">
                         <label for="input-email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="input-email" placeholder="Masukkan Email">
@@ -189,8 +189,6 @@
             </div>
         </div>
     </section>
-
-    
 
     <!-- link CDN Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

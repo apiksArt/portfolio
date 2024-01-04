@@ -24,3 +24,30 @@ function toogleDetail(e) {
         $(target).html("Less info").addClass("active");
     }
 }
+
+//membuat function onfromsubmit dawri form html
+function onFromSubmited(e) {
+
+    //untuk menghindari terjadinya loading
+    e.preventDefault()
+
+    // pengambilan nilai dari inputan
+    const email = $("#input-email");
+    const subjek = $("#input-subjek");
+    const pesan = $("#input-pesan");
+
+    // validasi inputan dengan pengkondisian
+    if (!$(email).val()) {
+        alert("Email is required");
+    } else if (!$(subjek).val()) {
+        alert("subjek is required");
+    } else if (!$(pesan).val()) {
+        alert("pesan is required");
+    } else {
+        alert("Form Submited");
+        $(email).val("")
+        $(subjek).val("")
+        $(pesan).val("")
+    }
+
+}
