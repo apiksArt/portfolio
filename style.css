@@ -6,6 +6,7 @@
 section {
     padding-top: 80px;
     position: relative;
+    padding-bottom: 50px;
 }
 
 section::before {
@@ -125,4 +126,89 @@ section::before {
 .button.active {
     color: white;
     background-color: black;
+}
+
+
+/* WORK -------------------------------------------------------------------------------------------- */
+#work::before {
+    content: "Work";
+}
+
+.work-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-box p {
+    width: 45%;
+}
+
+.work-box .img-projek {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "work1 work2" "work3 work3";
+    gap: 16px;
+    position: relative;
+}
+
+.img-projek img {
+    width: 100%;
+}
+
+.img-projek .img-item {
+    position: relative;
+}
+
+.img-projek .img-item:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.work-box .img-projek #work1 {
+    grid-area: work1;
+}
+
+.work-box .img-projek #work1:hover::after {
+    content: "Web Developer";
+    color: white;
+    font-size: 22px;
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-box .img-projek #work2 {
+    grid-area: work2;
+}
+
+.work-box .img-projek #work2:hover::after {
+    content: "Data Science";
+    color: white;
+    font-size: 22px;
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-box .img-projek #work3 {
+    grid-area: work3;
+}
+
+.work-box .img-projek #work3:hover::after {
+    content: "Cyber Security";
+    color: white;
+    font-size: 22px;
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
