@@ -6,7 +6,7 @@
 section {
     padding-top: 80px;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 section::before {
@@ -115,7 +115,6 @@ section::before {
 }
 
 .more .button {
-    text-decoration: none;
     border: 3px solid black;
     border-radius: 25px;
     padding: 5px 30px;
@@ -211,4 +210,30 @@ section::before {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* SOSMED -------------------------------------------------------------------------------------------- */
+#contact::before {
+    content: "Contact";
+}
+
+.contact .sosmed {
+    margin-top: 40px;
+}
+
+.contact-box-kanan form {
+    border: 1px solid black;
+    padding: 42px 24px;
+    border-radius: 20px;
+}
+
+.contact-box-kanan form label {
+    font-weight: 700;
+}
+
+.contact-box-kanan button {
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 30px;
 }
