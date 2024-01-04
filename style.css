@@ -1,11 +1,25 @@
+/* NAVBAR -------------------------------------------------------------------------------------------- */
 .navbar {
     box-shadow: 0px 0px 5px 0px black;
 }
 
 section {
     padding-top: 80px;
+    position: relative;
 }
 
+section::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    font-size: 64px;
+    color: gray;
+    font-weight: 700;
+    top: -30px;
+    left: -30px;
+}
+
+/* HOME -------------------------------------------------------------------------------------------- */
 #home .row {
     align-items: center;
 }
@@ -55,4 +69,60 @@ section {
 
 #home .arrow a img {
     width: 50px;
+}
+
+#home .arrow a#panah {
+    animation: updown 1s infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ABOUT -------------------------------------------------------------------------------------------- */
+#about::before {
+    content: 'About';
+}
+
+.job {
+    margin-top: 40px;
+}
+
+.job .job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.job .job-detail {
+    display: none;
+}
+
+.job .job-singkat h5 {
+    font-weight: 700;
+}
+
+.more .button {
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 5px 30px;
+}
+
+/* penambahan kelas aktif */
+.more .button:hover,
+.button.active {
+    color: white;
+    background-color: black;
 }
